@@ -9,15 +9,22 @@ body {
     font-size: var(--main-font-size);
     color: var(--main-font-color);
 }
-/* HEADER */
+
 .container {
     width: 90%;
     margin: 0 auto;
+    padding: 0 0;
     max-width: 1200px;
     border-right: 1px solid red;
     border-left: 1px solid red;
 }
 
+.inner_container {
+    margin: 0px 15px 0 15px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+/* HEADER */
 .header {
     margin: 15px 15px 70px 15px;
     display: flex;
@@ -69,7 +76,10 @@ body {
 }
 
 .nav__button,
-.banner__button {
+.banner__button,
+.features_button {
+    margin: 0 0;
+    padding: 0 0;
     min-width: 100px;
     min-height: 40px;
     background-color: #FF9900;
@@ -77,10 +87,13 @@ body {
     border: transparent;
     border-radius: 4px;
     font-weight: 600;
+    font-size: 16px;
+    font-family: 'Poppins';
 }
 
 .nav__button:hover,
-.banner__button:hover {
+.banner__button:hover,
+.features_button:hover {
     cursor: pointer;
     transition: all 0.2s ease;
     color:#2F281E;
@@ -89,10 +102,9 @@ body {
 }
 /* BANNER */
 .banner {
-    margin: 15px 15px 100px 15px;
+    margin: 15px 0 100px 0;
     display: flex;
     align-items: center;
-    border:1px solid black;
 }
 
 .banner__title {
@@ -100,12 +112,10 @@ body {
     font-size: 44px;
     font-weight: 700;
     margin: 0 0 30px 0;
-    justify-content: flex-end;
 }
 
 .banner_content {
-    max-width: 45%;
-    display: inline-block;
+    flex-basis: 50%;
     margin: 0 50px 0 0;
 }
 
@@ -113,6 +123,7 @@ body {
     min-width: 180px;
 }
 
+/* FEATURES */
 .features_title {
     display: flex;
     justify-content: center;
@@ -127,16 +138,41 @@ body {
 }
 
 .card {
+    margin: 0 15px;
     max-width: 25%;
 }
 /* FEATURES */
-.features_button {
-    display: flex;
-    min-width: 180px;
-    margin: 0 auto;
+.features {
+    padding: 0 0 100px 0;
+    background-image:url('../img/main/first_page_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.features {
-    margin: 15px 15px 100px 15px;
-    background-image:url('../img/main/first_page_bg.png');
+.features_button {
+    min-width: 180px;
+    display: block;
+    margin:0 auto;
+}
+/* BENEFITS */
+.benefits_content_wrapper {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: 1
+}
+
+.benefits_content__title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.benefits_text {
+    margin: 20px 0 0 0;
+    flex-basis: 40%;
+    align-items: center
+}
+
+.benefits_content__text:nth-of-type(2) {
+    margin: 0 0 40px 0
 }
