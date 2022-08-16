@@ -122,7 +122,6 @@ body {
 .banner__button {
     min-width: 180px;
 }
-
 /* FEATURES */
 .features_title {
     display: flex;
@@ -173,6 +172,45 @@ body {
     align-items: center
 }
 
+.benefits_content__low__title {
+    font-weight: 900;
+    font-size: 16px;
+}
+
 .benefits_content__text:nth-of-type(2) {
     margin: 0 0 40px 0
+}
+/* PRODUCT_MANAGERS */
+.product_managers_wrapper {
+    display: flex;
+    flex-wrap: 1;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.product_managers_img {
+    flex-basis: 50%;
+}
+
+.product_managers_content {
+    margin: 50px 0;
+    flex-basis: 40%;
+}
+
+.product_managers___item {
+    margin: 0 0 30px 0;
+}
+
+.product_managers__list {
+    list-style-type: none;
+    position: relative;
+}
+
+.product_managers___item:before {
+    content: '';
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background: url('../img/main/product_managers_icon.png');
+    left: -10px;
 }
