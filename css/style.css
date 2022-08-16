@@ -15,20 +15,13 @@ li {
 }
 
 .container {
-    width: 90%;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 0;
-    max-width: 1200px;
-    border: 1px solid #ff0000b2;
-    background-image:url('../img/main/first_page_bg.png');
-    background-position: -150px 26%;
-    background-repeat: no-repeat;
+    border: 1px solid red
 }
 
-.inner_container {
-    margin: 0px 15px 0 15px;
-    border: 1px solid #ff0000b2;
-}
 /* HEADER */
 .header {
     margin: 20px 15px 70px 20px;
@@ -111,7 +104,7 @@ li {
 }
 /* BANNER */
 .banner {
-    margin: 15px 0 100px 0;
+    margin: 15px 15px 100px 15px;
     display: flex;
     align-items: center;
 }
@@ -134,6 +127,15 @@ li {
     min-height: 50px;
 }
 /* FEATURES */
+.features {
+    margin: 20px 0 0 0;
+    padding: 0 0 100px 0;
+    background-image:url('../img/main/first_page_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+}
+
 .features_title {
     margin: 0 auto 50px auto;
     text-align: center;
@@ -151,11 +153,6 @@ li {
     margin: 0 15px;
     max-width: 25%;
 }
-/* FEATURES */
-.features {
-    padding: 0 0 100px 0;
-}
-
 .features_button {
     min-width: 180px;
     display: block;
@@ -163,7 +160,7 @@ li {
 }
 /* BENEFITS */
 .benefits_content_wrapper {
-    margin: 100px 0;
+    margin: 100px 15px;
     display: flex;
     justify-content: space-between;
     flex-wrap: 1
@@ -194,7 +191,7 @@ li {
     flex-wrap: 1;
     justify-content: space-between;
     align-items:center;
-    margin:0 0 100px 0;
+    margin:0 15px 100px 0;
 }
 
 .product_managers_img {
@@ -240,7 +237,7 @@ li {
 .marketers_wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 100px 0;
+    margin: 0 15px 100px 15px;
 }
 
 .marketers_content__text {
@@ -252,6 +249,7 @@ li {
 }
 /* FOOTER */
 .footer_wrapper {
+    margin: 0 15px;
     display: flex;
     justify-content: space-between;
 }
