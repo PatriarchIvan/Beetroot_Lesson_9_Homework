@@ -9,7 +9,7 @@ body {
     font-size: var(--main-font-size);
     color: var(--main-font-color);
 }
-
+/* HEADER */
 .container {
     width: 90%;
     margin: 0 auto;
@@ -21,7 +21,6 @@ body {
 .header {
     margin: 15px 15px 70px 15px;
     display: flex;
-    border:1px solid black;
 }
 
 .header__logo {
@@ -80,14 +79,15 @@ body {
     font-weight: 600;
 }
 
-.nav__button:hover {
+.nav__button:hover,
+.banner__button:hover {
     cursor: pointer;
     transition: all 0.2s ease;
     color:#2F281E;
     background: #FFFFFF;
     border: 1px solid #BCD0E5;
 }
-
+/* BANNER */
 .banner {
     margin: 15px 15px 100px 15px;
     display: flex;
@@ -113,3 +113,30 @@ body {
     min-width: 180px;
 }
 
+.features_title {
+    display: flex;
+    justify-content: center;
+    min-width: 500px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.card__wrapper {
+    display: flex;
+    margin:0 0 70px 0;
+}
+
+.card {
+    max-width: 25%;
+}
+/* FEATURES */
+.features_button {
+    display: flex;
+    min-width: 180px;
+    margin: 0 auto;
+}
+
+.features {
+    margin: 15px 15px 100px 15px;
+    background-image:url('../img/main/first_page_bg.png');
+}
