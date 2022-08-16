@@ -1,0 +1,9 @@
+@import url(./_vars.css);
+
+html,
+body {
+    margin: 0 0;
+    padding: 0 0;
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+}

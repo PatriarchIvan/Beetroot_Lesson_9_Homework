@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:wght@300;400;600;700&display=swap");
+
+:root{
+    --main-font-family: Montserrat;
+    --main-font-color: ##544837;
+    --main-font-size: 16px;
+}
