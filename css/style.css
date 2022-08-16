@@ -15,14 +15,15 @@ body {
     margin: 0 auto;
     padding: 0 0;
     max-width: 1200px;
-    border-right: 1px solid red;
-    border-left: 1px solid red;
+    border-right: 1px solid #ff0000b2;
+    border-left: 1px solid #ff0000b2;
+    border-bottom: 1px solid #ff0000b2;
 }
 
 .inner_container {
     margin: 0px 15px 0 15px;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+    border-right: 1px solid #ff0000f4;
+    border-left: 1px solid #ff0000f4;
 }
 /* HEADER */
 .header {
@@ -77,7 +78,8 @@ body {
 
 .nav__button,
 .banner__button,
-.features_button {
+.features_button,
+.footer_input__button {
     margin: 0 0;
     padding: 0 0;
     min-width: 100px;
@@ -93,7 +95,8 @@ body {
 
 .nav__button:hover,
 .banner__button:hover,
-.features_button:hover {
+.features_button:hover,
+.footer_input__button:hover {
     cursor: pointer;
     transition: all 0.2s ease;
     color:#2F281E;
@@ -119,8 +122,10 @@ body {
     margin: 0 50px 0 0;
 }
 
-.banner__button {
+.banner__button,
+.footer_input__button {
     min-width: 180px;
+    min-height: 50px;
 }
 /* FEATURES */
 .features_title {
@@ -199,6 +204,7 @@ body {
 }
 
 .product_managers__title {
+    font-weight: 700;
     margin:0 0 20px 0;
     padding: 0 0 0 0;
 }
@@ -234,6 +240,56 @@ body {
     margin: 0 0 100px 0;
 }
 
+.marketers_content__text {
+    font-weight: 700;
+}
+
 .marketers_content {
     flex-basis: 40%;
+}
+/* FOOTER */
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_list {
+    list-style: none;
+}
+
+.footer_list__title {
+    padding: 0 0;
+    margin: 5px 0 30px 0;
+}
+
+.footer_list___item {
+    margin: 0 0 15px 0;
+}
+
+.footer_list___item:last-child {
+    margin: 0 0;
+}
+
+.footer_input__text {
+    max-width: 280px;
+    margin: 0 60px 25px 0;
+}
+
+.footer_input__input {
+    opacity: 0.5;
+    display: block;
+    min-width: 340px;
+    min-height: 50px;
+    margin: 25px 0;
+}
+
+.footer_list__title,
+.footer_input__text {
+    font-weight: 700;
+    font-size: 20px;
+    font-family:'gotham';
+    color:#2F281E;
+}
+
+.footer_wrapper {
+    margin: 0 0 70px 0;
 }
