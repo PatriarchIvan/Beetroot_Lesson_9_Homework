@@ -1,4 +1,5 @@
 @import url(./_vars.css);
+@import url(./_fonts.css);
 
 html,
 body {
@@ -10,27 +11,16 @@ body {
     color: var(--main-font-color);
 }
 
-li {
-    font-family: var(--main-font-family);
-}
-
 .container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 0;
-    border: 1px solid red
 }
 
 /* HEADER */
 .header {
-    margin: 20px 15px 70px 20px;
+    margin: 20px 20px 70px 20px;
     display: flex;
-}
-
-.header__logo {
-    min-width: 200px;
-    min-height: 32px;
 }
 
 .nav_bar {
@@ -40,29 +30,32 @@ li {
     justify-content: space-between;
 }
 
+.header__logo {
+    min-width: 200px;
+    min-height: 32px;
+}
+
 .nav__menu {
-    margin: 0 auto;
-    padding: 0 auto;
-    max-width: 50%;
     list-style: none;
 }
 
 .nav___item {
     display: inline-block;
-    padding: 0 0;
-    margin: 0 20px;
 }
 
 .nav___item:last-child {
     margin-right: 0px
 }
 
+.footer_list___item>a,
 .nav____link {
+    color: var(--main-font-color);
     text-decoration: none;
     font-family: var(--main-font-family);
     font-size: var(--main-font-size);
 }
 
+.footer_list___item>a:hover,
 .nav____link:hover {
     cursor: pointer;
     color: #FF9900;
@@ -74,7 +67,7 @@ li {
 }
 
 .nav__button,
-.banner__button,
+.design__button,
 .features_button,
 .footer_input__button {
     margin: 0 0;
@@ -87,12 +80,12 @@ li {
     border: transparent;
     border-radius: 4px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--main-font-size);
     font-family: 'Poppins';
 }
 
 .nav__button:hover,
-.banner__button:hover,
+.design__button:hover,
 .features_button:hover,
 .footer_input__button:hover {
     cursor: pointer;
@@ -102,26 +95,24 @@ li {
     background: #FFFFFF;
     border: 1px solid #BCD0E5;
 }
-/* BANNER */
-.banner {
-    margin: 15px 15px 100px 15px;
+/* DESIGN */
+.design {
+    margin: 15px 20px 100px 20px;
     display: flex;
     align-items: center;
 }
 
-.banner__title {
+.design__title {
     color:#2F281E;
     font-size: 44px;
     font-weight: 700;
-    margin: 0 0 30px 0;
 }
 
-.banner_content {
-    flex-basis: 50%;
+.design_content {
     margin: 0 50px 0 0;
 }
 
-.banner__button,
+.design__button,
 .footer_input__button {
     min-width: 180px;
     min-height: 50px;
@@ -150,9 +141,10 @@ li {
 }
 
 .card {
-    margin: 0 15px;
+    margin: 0 20px;
     max-width: 25%;
 }
+
 .features_button {
     min-width: 180px;
     display: block;
@@ -160,10 +152,10 @@ li {
 }
 /* BENEFITS */
 .benefits_content_wrapper {
-    margin: 100px 15px;
+    margin: 100px 20px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: 1
+    flex-wrap: 1;
 }
 
 .benefits_content__title {
@@ -174,7 +166,7 @@ li {
 .benefits_text {
     margin: 20px 0 0 0;
     flex-basis: 40%;
-    align-items: center
+    align-items: center;
 }
 
 .benefits_content__low__title {
@@ -183,15 +175,14 @@ li {
 }
 
 .benefits_content__text:nth-of-type(2) {
-    margin: 0 0 40px 0
+    margin: 0 0 40px 0;
 }
 /* PRODUCT_MANAGERS */
 .product_managers_wrapper {
     display: flex;
-    flex-wrap: 1;
     justify-content: space-between;
     align-items:center;
-    margin:0 15px 100px 0;
+    margin:0 20px 100px 20px;
 }
 
 .product_managers_img {
@@ -199,15 +190,9 @@ li {
 }
 
 .product_managers_content {
-    margin: 50px 0;
     flex-basis: 40%;
 }
 
-.product_managers__title {
-    font-weight: 700;
-    margin:0 0 20px 0;
-    padding: 0 0 0 0;
-}
 .product_managers___item {
     margin: 0 0 30px 0;
 }
@@ -230,18 +215,14 @@ li {
     width: 35px;
     height: 35px;
     position: absolute;
-    background: url('../img/main/product_managers_icon.png');
+    background: url('../img/main/icons/product_managers_icon.png');
     left: -5px;
 }
 /* MARKETERS */
 .marketers_wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 0 15px 100px 15px;
-}
-
-.marketers_content__text {
-    font-weight: 700;
+    margin: 0 20px 100px 20px;
 }
 
 .marketers_content {
@@ -249,7 +230,7 @@ li {
 }
 /* FOOTER */
 .footer_wrapper {
-    margin: 0 15px;
+    margin: 0 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -287,7 +268,7 @@ li {
 }
 
 .footer_input__input:hover {
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in;
     opacity: 0.8;
     cursor: pointer;
 }
