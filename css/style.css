@@ -89,6 +89,7 @@ body {
 .features_button:hover,
 .footer_input__button:hover {
     cursor: pointer;
+    transform: scale(1.2);
     transition: ease-out 0.7s;
     box-shadow: inset 150px 0 0 0 #FFFFFF;
     color:#2F281E;
