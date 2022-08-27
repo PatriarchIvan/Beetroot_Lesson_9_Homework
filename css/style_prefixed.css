@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 5 version
+*/
+
 @import url(./_vars.css);
 @import url(./_fonts.css);
 
@@ -5,7 +12,8 @@ html,
 body {
     margin: 0 0;
     padding: 0 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: var(--main-font-family);
     font-size: var(--main-font-size);
     color: var(--main-font-color);
@@ -20,14 +28,22 @@ body {
 /* HEADER */
 .header {
     margin: 20px 20px 70px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .nav_bar {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .header__logo {
@@ -59,6 +75,8 @@ body {
 .nav____link:hover {
     cursor: pointer;
     color: #FF9900;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
@@ -74,7 +92,8 @@ body {
     padding: 0 0;
     min-width: 100px;
     min-height: 40px;
-    box-shadow: inset 0 0 0 0 #FFFFFF;
+    -webkit-box-shadow: inset 0 0 0 0 #FFFFFF;
+            box-shadow: inset 0 0 0 0 #FFFFFF;
     background-color: #FF9900;
     color: #FFFFFF;
     border: transparent;
@@ -89,8 +108,11 @@ body {
 .features_button:hover,
 .footer_input__button:hover {
     cursor: pointer;
+    -webkit-transition: ease-out 0.7s;
+    -o-transition: ease-out 0.7s;
     transition: ease-out 0.7s;
-    box-shadow: inset 150px 0 0 0 #FFFFFF;
+    -webkit-box-shadow: inset 150px 0 0 0 #FFFFFF;
+            box-shadow: inset 150px 0 0 0 #FFFFFF;
     color:#2F281E;
     background: #FFFFFF;
     border: 1px solid #BCD0E5;
@@ -98,8 +120,12 @@ body {
 /* DESIGN */
 .design {
     margin: 15px 20px 100px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .design__title {
@@ -124,7 +150,9 @@ body {
     background-image:url('../img/main/first_page_bg.png');
     background-position: center;
     background-repeat: no-repeat;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .features_title {
@@ -136,6 +164,8 @@ body {
 }
 
 .card__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin:0 0 70px 0;
 }
@@ -153,9 +183,14 @@ body {
 /* BENEFITS */
 .benefits_content_wrapper {
     margin: 100px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: 1;
+        flex-wrap: 1;
 }
 
 .benefits_content__title {
@@ -165,8 +200,11 @@ body {
 
 .benefits_text {
     margin: 20px 0 0 0;
-    flex-basis: 40%;
-    align-items: center;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .benefits_content__low__title {
@@ -179,18 +217,26 @@ body {
 }
 /* PRODUCT MANAGERS */
 .product_managers_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items:center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
     margin:0 20px 100px 20px;
 }
 
 .product_managers_img {
-    flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
 }
 
 .product_managers_content {
-    flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
 }
 
 .product_managers___item {
@@ -220,19 +266,28 @@ body {
 }
 /* MARKETERS */
 .marketers_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 20px 100px 20px;
 }
 
 .marketers_content {
-    flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
 }
 /* FOOTER */
 .footer_wrapper {
     margin: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .footer_list {
@@ -268,6 +323,8 @@ body {
 }
 
 .footer_input__input:hover {
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
     opacity: 0.8;
     cursor: pointer;
